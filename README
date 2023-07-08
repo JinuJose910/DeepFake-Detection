@@ -1,0 +1,39 @@
+# DeepFake Detector
+
+This repository contains code for a DeepFake detector that utilizes the PyTorch framework, the `facenet_pytorch` library for face detection, and the `pytorch_grad_cam` library for generating class activation maps (CAMs) for explainability.
+
+## Setup
+
+To run the code in this repository, please follow these steps:
+
+1. Clone the repository to your local machine.
+2. Install the required dependencies by running the following command:
+
+```shell
+pip install -r requirements.txt
+```
+
+3. Download the pre-trained model weights for the InceptionResnetV1 architecture. You can download the weights from the following link: [Download InceptionResnetV1 Weights](https://drive.google.com/file/d/1D6qKzUfn9mI-LW-IZhdGhMg7RnNrVDKh/view?usp=sharing). Place the downloaded weights file, `resnetinceptionv1_epoch_32.pth`, in the same directory as the code.
+
+## Usage
+
+Once the setup is complete, you can run the DeepFake detector using the following command:
+
+```shell
+python main.py
+```
+
+The program will start a Gradio interface where you can upload an image for prediction. The DeepFake detector will detect faces in the image, generate a class activation map (CAM) for explainability, and predict whether the image contains a real or fake face.
+
+## Customization
+
+If you want to modify or extend the functionality of the DeepFake detector, you can make changes to the code. For example, you can experiment with different pre-trained models, adjust the confidence threshold for classification, or customize the Gradio interface to include additional inputs or outputs.
+
+## Acknowledgments
+
+This code utilizes the `facenet_pytorch` library for face detection and the `pytorch_grad_cam` library for generating class activation maps. We would like to acknowledge the contributors of these libraries for their valuable contributions to the project. This project is guided by Pooja Madam from OpenWeaver as part of Virtual Internship 
+
+
+## Contact
+
+For any further inquiries, you can reach out to [Your Name] at [your_email@example.com].
